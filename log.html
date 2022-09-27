@@ -1,0 +1,131 @@
+<?php
+    include("conexao.php");
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Log</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/estilo.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+   <div class="container" >
+      <header class="header">
+         <div class="caixa1">
+            <i class="fa fa-minus-square-o" style="font-size:20px;"></i>
+            <i class="fa fa-minus-square-o" style="font-size:20px;"></i>
+         </div>
+         <div class="caixa2">
+            <span>'Nome do usuário'</span>
+            <i class="fa fa-minus-square-o" style="font-size:20px;"></i>
+         </div>
+      </header>
+      <main class="main-content">
+         <div class="usuarios">
+            <h1>Usuários</h1>
+            <small class="subtitle">Registro de Log</small>
+         </div>
+         <div class="panel widget light-widget panel-bd-top">
+            <section class="col-md-12" id="section2" style="background-color: #FFF;">
+               <div id="informacoesGerais">
+                  <h3 style="color: #C63131">Listagem de registro de eventos / log</h3>
+               </div>
+               <div class="table-responsive">
+                  <table id="tblDados1" class="records1 table table-striped">
+                     <thead>
+                        <tr>
+                           <th scope="col">ID</th>
+                           <th scope="col">Bloqueado</th>
+                           <th scope="col">Nome</th>
+                           <th scope="col">E-mail</th>
+                           <th scope="col">Login</th>
+                           <th scope="col">Senha</th>
+                           <th scope="col">CPF</th>
+                           <th scope="col">Perfis</th>
+                           <th scope="col">Criado</th>
+                           <th scope="col">Editado</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <a href="editarnovousuario.php">editar</a>
+                        <?php 
+                           //listagem no log
+                           $result_cadastros = "SELECT * FROM cadastro";
+                           $resultado_cadastros = mysqli_query($conexao, $result_cadastros);
+                           
+                           while($row_cadastro = mysqli_fetch_assoc($resultado_cadastros)){
+                           	
+                           	echo "<tr scope='row'>";
+                           		echo "<td>" . $row_cadastro['id'] .        "</td>" ;
+                           		echo "<td>" . $row_cadastro['bloqueado'] . "</td>";
+                           		echo "<td>" . $row_cadastro['nome'] .      "</td>";
+                           		echo "<td>" . $row_cadastro['email'] .     "</td>";
+                           		echo "<td>" . $row_cadastro['login'] .     "</td>";
+                           		echo "<td>" . $row_cadastro['senha'] .     "</td>";
+                           		echo "<td>" . $row_cadastro['cpf'] . 	   "</td>";
+                           		echo "<td>" . $row_cadastro['perfis'] .    "</td>";
+                           		echo "<td>" . $row_cadastro['criado'] .    "</td>";
+                           		echo "<td>". $row_cadastro['modificado'] . "</td>";
+                           	echo "</tr>";
+                           	
+                           	
+                           }			
+                                        	?>
+                     </tbody>
+                  </table>
+               </div>
+            </section>
+         </div>
+      </main>
+      <aside class="side-bar">
+         <div class="navbar-tabs-menu">
+         </div>
+         <div w3-include-html="mainmenu.html"></div>
+      </aside>
+      <div class="mobile-menu">
+         <input id="menu__toggle" type="checkbox">
+         <label class="menu__btn" for="menu__toggle">
+         <span></span>
+         </label>
+         <ul class="menu__box" style="background-color: #e5e5e5e0;">
+            <li class="menu__item" style="background-color: #e5e5e5e0;">
+               <a href="funcao.php" class="menu__item  nav-link sub-btn">Função</a>
+            </li>
+            <li class="menu__item">
+               <a href="perfilusuario.php" class="menu__item sub-btn">Perfil de Usuário</a>
+            </li>
+            <li class="menu__item">
+               <a href="setor.php" class="menu__item sub-btn">Setor</a>
+            </li>
+            <li class="menu__item">
+               <a href="tipousuario.php" class="menu__item sub-btn">Tipos de Usuário</a>
+            </li>
+            <li class="menu__item">
+               <a href="usuarios.php" class="menu__item sub-btn">Usuário</a>
+            </li>
+            <li class="menu__item">
+               <a href="log.php" class="menu__item sub-btn">Log</a>
+            </li>
+            <li class="menu__item">
+               <a href="index.php" class="menu__item">Sair</a>
+            </li>
+         </ul>
+      </div>
+      <footer class="footer">
+         <small style="margin-left: 10px;">Setup 4.39.4 - Desenvolvido por Qualirede - <a href=""
+            style="color: #D0BF4A;">http://www.qualirede.com.br</a> </small>
+      </footer>
+   </div>
+   <script src="./js/script.js"></script>
+   <script>includeHTML();</script>
+</body>
+
+</html>

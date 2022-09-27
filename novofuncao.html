@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cadastrar Função</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/bootstrap.css">
+		<link rel="stylesheet" href="./css/estilo.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="caixa1" style="margin-left: 150px; margin-top: 10px;">
+                <i class="fa fa-minus-square-o" style="font-size:20px;"></i>
+                <i class="fa fa-minus-square-o" style="font-size:20px;"></i>
+            </div>
+            <div class="caixa2" style="margin-top: 10px;">
+                <span>'Nome do usuário'</span> 
+                <i class="fa fa-minus-square-o" style="font-size:20px;"></i>
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="historico" style="margin-top: -6px; margin-bottom:2px;">
+                <span class="header-story" style="margin-left: 2px;">                           
+                <a href="index.html"> <small>Home</small> / </a>           
+                <a href="funcao.html"> <small>Função</small> / </a>
+                <a href="novofuncao.html"> <small>Novo Função</small> / </a>
+                <small>Edição</small>
+                </span> 
+            </div>
+            <div class="usuarios">
+                <h1>Função</h1>
+                <small>Cadastro e edição de função</small>
+            </div>
+            <div class="salvar-cancelar">
+                <div class="salvar">   
+                    <button id="btnSalvar">              
+                    <i class="fa fa-save"></i>
+                    <small>Salvar</small> 
+                    </button>  
+                </div>
+                <div class="cancelar">   
+                    <button id="btnCancelar">
+                    <i class="fa fa-close"></i> 
+                    <small>Cancelar</small>
+                    </button>                                               
+                </div>
+            </div>
+            <div class="panel widget light-widget panel-bd-top">
+                <section class="col-md-12" id="section2" style="background-color: #FFF;">
+                    <div id="informacoesGerais">
+                        <h3 style="color: #C63131">Filtro</h3>
+                    </div>
+                    <br>
+                    <form id="form-cad-funcao" class="form-horizontal" method="POST" action="insert_funcao.html">
+					<div class="col-md-12">
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label class="col-xs-3 col-form-label control-label" >Bloqueado</label>
+                                        <div class="controls col-xs-3">
+                                            <input class="check_blok"type="checkbox">
+                                        </div>
+                                    </div>
+                                </div>
+							</div></div>
+					<div class="col-md-12">
+                            <div class="col-md-6">
+                                  <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label class="col-xs-3 col-form-label control-label">Função</label>
+                                        <div class="controls col-xs-9">
+                                            <input class="form-control" for="funcao" id="funcao" name="funcao" type="text" placeholder="Informe a função">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label class="col-xs-3 col-form-label control-label">Tipo de Usuário</label>
+                                        <div class="controls col-xs-9">
+                                            <select class="form-control" name="tipoUsuario" id="perfil-select" style="cursor: pointer;">
+                                                <option value="">Selecione</option>
+                                                <option value="cadastro">Cadastro</option>
+                                                <option value="auditoria-concorrente">Auditoria Concorrente</option>
+                                                <option value="pagamento">Pagamento</option>
+                                                <option value="relatorios-bi">Relatórios BI </option>
+                                                <option value="credenciamento">Credenciamento</option>
+                                                <option value="ais">Atenção Integral a Saúde</option>
+                                                <option value="core">Core</option>
+                                                <option value="relacionamento">Relacionamento</option>
+                                                <option value="relatorios">Relatórios</option>
+                                                <option value="cobranca">Cobrança</option>
+                                                <option value="setup">Setup</option>
+                                                <option value="analise-de-contas">Análise de Contas</option>
+                                                <option value="autorizacao">Autorização</option>
+                                                <option value="atendimento">Atendimento</option>
+                                                <option value="editor-de-regras">Editor de Regras</option>
+                                                <option value="faturamento">Faturamento</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="col-md-6">
+							<div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label class="col-xs-3 col-form-label control-label">Setor</label>
+                                        <div class="controls col-xs-9">
+                                            <select class="form-control" name="setor" id="setor-select" style="cursor: pointer;">
+                                                <option value="">Selecione</option>
+                                                <option value="cadastro">Cadastro</option>
+                                                <option value="auditoria-concorrente">Auditoria Concorrente</option>
+                                                <option value="pagamento">Pagamento</option>
+                                                <option value="relatorios-bi">Relatórios BI </option>
+                                                <option value="credenciamento">Credenciamento</option>
+                                                <option value="ais">Atenção Integral a Saúde</option>
+                                                <option value="core">Core</option>
+                                                <option value="relacionamento">Relacionamento</option>
+                                                <option value="relatorios">Relatórios</option>
+                                                <option value="cobranca">Cobrança</option>
+                                                <option value="setup">Setup</option>
+                                                <option value="analise-de-contas">Análise de Contas</option>
+                                                <option value="autorizacao">Autorização</option>
+                                                <option value="atendimento">Atendimento</option>
+                                                <option value="editor-de-regras">Editor de Regras</option>
+                                                <option value="faturamento">Faturamento</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <aside class="side-bar">
+            <div class="navbar-tabs-menu">
+            </div>
+            <div w3-include-html="mainmenu.html"></div>
+        </aside>
+        <div class="mobile-menu">
+            <input id="menu__toggle" type="checkbox">
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box" style="background-color: #e5e5e5e0;">
+                <li class="menu__item" style="background-color: #e5e5e5e0;">
+                    <a href="funcao.html" class="menu__item  nav-link sub-btn">Função</a>
+                </li>
+                <li class="menu__item">
+                    <a href="perfilusuario.html" class="menu__item sub-btn">Perfil de Usuário</a>              
+                </li>
+                <li class="menu__item">
+                    <a href="setor.html" class="menu__item sub-btn">Setor</a>
+                </li>
+                <li class="menu__item">
+                    <a href="tipousuario.html" class="menu__item sub-btn">Tipos de Usuário</a>
+                </li>
+                <li class="menu__item">
+                    <a href="usuarios.html" class="menu__item sub-btn">Usuário</a>
+                </li>
+                <li class="menu__item">
+                    <a href="log.html" class="menu__item sub-btn">Log</a>
+                </li>
+                <li class="menu__item" >
+                    <a href="index.html" class="menu__item">Sair</a>
+                </li>
+            </ul>
+        </div>
+        <footer class="footer">  
+            <small style="margin-left: 10px;">Setup 4.39.4 - Desenvolvido por Qualirede - <a href="" style="color: #C63131;">http://www.qualirede.com.br</a> </small>
+        </footer>
+    </div>
+    <script src="./js/script.js"></script> 
+    <script>includeHTML();</script> 
+</body>
+</html>

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tipo de Usuário</title>
+	<title>Sistemas</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./css/bootstrap.css">
 	<link rel="stylesheet" href="./css/estilo.css">
@@ -25,20 +25,20 @@
 		<main class="main-content">
 			<div class="historico" style="margin-top: -6px; margin-bottom:2px;">
 				<span class="header-story" style="margin-left: 2px;">                           
-				<a href="index.html"> <small>Home</small> / </a>           
-				<a href="tipousuario.html"> <small>Tipo de usuário</small> / </a>
-				<small>Pesquisa</small>
+                    <a href="index.html"> <small>Home</small> / </a>           
+                    <a href="sistemas.html"> <small>Sistemas</small> / </a>
+                    <small>Pesquisa</small>
 				</span> 
 			</div>
 			<div class="usuarios">
-				<h1>Tipo de usuário</h1>
-				<small class="subtitle">Cadastro e edição de tipo de usuário</small>
+				<h1>Sistemas</h1>
+				<small class="subtitle">Cadastro e edição de Sistemas</small>
 			</div>
 			<div class="salvar-cancelar">
 				<div class="salvar">
-					<a href="novotipodeusuario.html">
-					<i class="fa fa-plus"></i>
-					<small>Adicionar</small> 
+					<a href="novosistema.html">
+                        <i class="fa fa-plus"></i>
+                        <small>Adicionar</small> 
 					</a>
 				</div>
 			</div>
@@ -50,13 +50,26 @@
 					<br>
 					<form class="form-horizontal" action="">
 						<div class="col-md-6">
-							<label class="col-xs-4 col-form-label control-label">Tipo de Usuário</label>
+							<label class="col-xs-3 col-form-label control-label">Setor</label>
 							<div class="controls col-xs-8">
-								<select class="form-control" name="tipoUsuario" id="tipoUsuario" style="cursor: pointer;">
+								<select class="form-control" name="setor" id="setor" style="cursor: pointer;">
 									<option value="">Selecione</option>
-									<option value="">Cliente</option>
-									<option value="">Colaborador</option>
-									<option value="">Prestador</option>
+									<option value="">Cadastro</option>
+									<option value="">Auditoria Concorrente</option>
+									<option value="">Pagamento</option>
+									<option value="">Relatórios BI </option>
+									<option value="">Credenciamento</option>
+									<option value="">Atenção Integral a Saúde</option>
+									<option value="">Core</option>
+									<option value="">Relacionamento</option>
+									<option value="">Relatórios</option>
+									<option value="">Cobrança</option>
+									<option value="">Setup</option>
+									<option value="">Análise de Contas</option>
+									<option value="">Autorização</option>
+									<option value="">Atendimento</option>
+									<option value="">Editor de Regras</option>
+									<option value="">Faturamento</option>
 								</select>
 							</div>
 						</div>
@@ -67,7 +80,7 @@
 							</div>
 						</div>
 					</form>
-					<br>
+					</br>
 				</section>
 			</div>
 		</main>
@@ -107,6 +120,6 @@
 		</footer>
 	</div>
 	<script src="./js/script.js"></script>
-	<script>includeHTML();</script> 
+	<script>includeHTML();</script>        
 </body>
 </html>

@@ -6,280 +6,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil de Usuário</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="resources\css\bootstrap.css">
-		<link rel="stylesheet" href="resources\css\estilo.css">
+		<link rel="stylesheet" href="./css/bootstrap.css">
+		<link rel="stylesheet" href="./css/estilo.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 </head>
 <body>
-    <div class="container">
-
-        <header class="header">
-            <div class="caixa1" style="margin-left: 150px; margin-top: 10px;">
-                <i class="fa fa-minus-square-o" style="font-size:20px;"></i>
-                <i class="fa fa-minus-square-o" style="font-size:20px;"></i>
-            </div>
-                
-            <div class="caixa2" style="margin-top: 10px;">
-               <span>Luide Santos de Jesus</span> 
-                <i class="fa fa-minus-square-o" style="font-size:20px;"></i>
-            </div>
-        </header>
-
-        <main class="main-content">
-            <div class="historico" style="margin-top: -6px; margin-bottom:2px;">
-                <span class="header-story" style="margin-left: 2px;">                           
-                    <a href=""> <small style="color: #C63131;">Home</small> / </a>           
-                    <a href=""> <small style="color: #C63131;">Usuários </small> / </a>
-                    <a href="">  <small>Edição</small> </a>
-                </span> 
-            </div>
-
-            <div class="usuarios">
-                <h1>Perfil de usuário</h1>
-                <small>Cadastro e edição de perfil de usuário</small>
-            </div>
-
-            <div class="salvar-cancelar">
-                <div class="salvar">                   
-                    <i class="fa fa-user-plus" style="margin-left: 6px; font-size:36px"></i>
-                    <small>Adicionar</small> 
-                </div>
-            </div>
-            
-            <section id="section2" style="margin-top: 10px; padding: 12px; background-color: white;">
-               <h3>Filtro</h3>
-                        <form action=""  class="div-tipos-setor" style="background-color: white;">
-                            <small>Perfil de usuário:</small>
-                            <br>
-                            <select name="" id="">
-                                <option value=""></option>
-                                <option value="">Cadastro</option>
-                                <option value="">Auditoria Concorrente</option>
-                                <option value="">Pagamento</option>
-                                <option value="">Relatórios BI </option>
-                                <option value="">Credenciamento</option>
-                                <option value="">Atenção Integral a Saúde</option>
-                                <option value="">Core</option>
-                                <option value="">Relacionamento</option>
-                                <option value="">Relatórios</option>
-                                <option value="">Cobrança</option>
-                                <option value="">Setup</option>
-                                <option value="">Análise de Contas</option>
-                                <option value="">Autorização</option>
-                                <option value="">Atendimento</option>
-                                <option value="">Editor de Regras</option>
-                                <option value="">Faturamento</option>
-                            </select>
-                        </form>
-                    
-
-                          <form>
-                                <small>Setor:</small>
-                                <br>
-                                <select name="" id="">
-                                    <option value=""></option>
-                                    <option value="">Cadastro</option>
-                                    <option value="">Auditoria Concorrente</option>
-                                    <option value="">Pagamento</option>
-                                    <option value="">Relatórios BI </option>
-                                    <option value="">Credenciamento</option>
-                                    <option value="">Atenção Integral a Saúde</option>
-                                    <option value="">Core</option>
-                                    <option value="">Relacionamento</option>
-                                    <option value="">Relatórios</option>
-                                    <option value="">Cobrança</option>
-                                    <option value="">Setup</option>
-                                    <option value="">Análise de Contas</option>
-                                    <option value="">Autorização</option>
-                                    <option value="">Atendimento</option>
-                                    <option value="">Editor de Regras</option>
-                                    <option value="">Faturamento</option>
-                                </select>
-                            </form>
-                   
-                        <form action="" style="background-color: white;">
-                            <small>Tipo de usuário:</small>
-                            <br>
-                            <select name="" id="">
-                                <option value="">Selecione</option>
-                                <option value="">Cliente</option>
-                                <option value="">Colaborador</option>
-                                <option value="">Prestador</option>
-                            </select>
-                        </form>
-
-                        <form>
-                            <small>Função:</small>
-                            <br>
-                            <select name="" id="">
-                                <option value=""></option>
-                                <option value="">Cadastro</option>
-                                <option value="">Auditoria Concorrente</option>
-                                <option value="">Pagamento</option>
-                                <option value="">Relatórios BI </option>
-                                <option value="">Credenciamento</option>
-                                <option value="">Atenção Integral a Saúde</option>
-                                <option value="">Core</option>
-                                <option value="">Relacionamento</option>
-                                <option value="">Relatórios</option>
-                                <option value="">Cobrança</option>
-                                <option value="">Setup</option>
-                                <option value="">Análise de Contas</option>
-                                <option value="">Autorização</option>
-                                <option value="">Atendimento</option>
-                                <option value="">Editor de Regras</option>
-                                <option value="">Faturamento</option>
-                            </select>
-                        </form>
-
-               <div style="margin-left: 10px;">
-                    <button style="background-color: #C63131; border: none; color: #FFF; height: 30px; width: 70px; cursor: pointer;">Pesquisar</button>
-                    <button style="background-color: gray; border: none; color: #FFF; height: 30px; width: 70px; cursor: pointer;">Limpar</button>
-               </div>
-               
-            </section>   
-        <br>       
-        </main>
-
-		<aside class="side-bar">
-			<div class="navbar-menu">
-				
+	<div class="container">
+		<header class="header">
+			<div class="caixa1" style="margin-left: 150px; margin-top: 10px;">
+				<i class="fa fa-minus-square-o" style="font-size:20px;"></i>
+				<i class="fa fa-minus-square-o" style="font-size:20px;"></i>
 			</div>
-			
-			<h1 style="padding-top: 12px; margin-left: 12px; color:#FFF;">Setup</h1>
-			<ul>
-				<li class="li-p">       
-					<a class="bt5 sub-btn" href="usuarios">
-						<span class="icon"><i class="fa fa-address-card"></i></span>
-						<span>Usuários</span>
+			<div class="caixa2" style="margin-top: 10px;">
+				<span>Luide Santos de Jesus</span> 
+				<i class="fa fa-minus-square-o" style="font-size:20px;"></i>
+			</div>
+		</header>
+		<main class="main-content">
+			<div class="historico" style="margin-top: -6px; margin-bottom:2px;">
+				<span class="header-story" style="margin-left: 2px;">                           
+				<a href=""> <small style="color: #C63131;">Home</small> / </a>           
+				<a href=""> <small style="color: #C63131;">Usuários </small> / </a>
+				<small>Pesquisa</small>
+				</span> 
+			</div>
+			<div class="usuarios">
+				<h1>Perfil de usuário</h1>
+				<small class="subtitle">Cadastro e edição de perfil de usuário</small>
+			</div>
+			<div class="salvar-cancelar">
+				<div class="salvar">
+					<a href="novoperfildeusuario.html">
+                  <i class="fa fa-plus"></i>
+                  <small>Adicionar</small> 
 					</a>
-				</li> 
-
-				<li class="li-p">       
-					<a class="bt4 sub-btn" href="tipousuario">
-						<span class="icon"><i class="fa fa-list-ul"></i></span>
-						<span>Tipo de usuário</span>
-					</a>
-				</li> 
-
-				<li class="li-p">       
-					<a class="bt3 sub-btn" href="setor">
-						<span class="icon"><i class="fa fa-briefcase"></i></span>
-						<span>Setor</span>
-					</a>
+				</div>
+			</div>
+			<div class="panel widget light-widget panel-bd-top">
+				<section class="col-md-12" id="section2" style="background-color: #FFF;">
+					<div id="informacoesGerais">
+						<h3 style="color: #C63131">Filtro</h3>
+					</div>
+					<br>
+					<form class="form-horizontal" action="">
+						<div class="col-md-12">
+							<div class="col-md-6">
+								<div class="form-group row">
+									<div class="col-md-12">
+										<label class="col-xs-3 col-form-label control-label">Perfil de usuário</label>
+										<div class="controls col-xs-9">
+											<select class="form-control" name="perfilUsuario" id="perfilUsuario" style="cursor: pointer;">
+												<option value="">Selecione</option>
+												<option value="">Cadastro</option>
+												<option value="">Auditoria Concorrente</option>
+												<option value="">Pagamento</option>
+												<option value="">Relatórios BI </option>
+												<option value="">Credenciamento</option>
+												<option value="">Atenção Integral a Saúde</option>
+												<option value="">Core</option>
+												<option value="">Relacionamento</option>
+												<option value="">Relatórios</option>
+												<option value="">Cobrança</option>
+												<option value="">Setup</option>
+												<option value="">Análise de Contas</option>
+												<option value="">Autorização</option>
+												<option value="">Atendimento</option>
+												<option value="">Editor de Regras</option>
+												<option value="">Faturamento</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-md-12">
+										<label class="col-xs-3 col-form-label control-label">Setor</label>
+										<div class="controls col-xs-9">
+											<select class="form-control" name="setor" id="setor" style="cursor: pointer;">
+												<option value="">Selecione</option>
+												<option value="">Cadastro</option>
+												<option value="">Auditoria Concorrente</option>
+												<option value="">Pagamento</option>
+												<option value="">Relatórios BI </option>
+												<option value="">Credenciamento</option>
+												<option value="">Atenção Integral a Saúde</option>
+												<option value="">Core</option>
+												<option value="">Relacionamento</option>
+												<option value="">Relatórios</option>
+												<option value="">Cobrança</option>
+												<option value="">Setup</option>
+												<option value="">Análise de Contas</option>
+												<option value="">Autorização</option>
+												<option value="">Atendimento</option>
+												<option value="">Editor de Regras</option>
+												<option value="">Faturamento</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group row">
+									<div class="col-md-12">
+										<label class="col-xs-3 col-form-label control-label">Tipo de usuário</label>
+										<div class="controls col-xs-9">
+											<select class="form-control" name="tipoUsuario" id="tipoUsuario">
+												<option value="">Selecione</option>
+												<option value="">Cliente</option>
+												<option value="">Colaborador</option>
+												<option value="">Prestador</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-md-12">
+										<label class="col-xs-3 col-form-label control-label">Função</label>
+										<div class="controls col-xs-9">
+											<select class="form-control" name="funcao" id="funcao" style="cursor: pointer;">
+												<option value="">Selecione</option>
+												<option value="">Cadastro</option>
+												<option value="">Auditoria Concorrente</option>
+												<option value="">Pagamento</option>
+												<option value="">Relatórios BI </option>
+												<option value="">Credenciamento</option>
+												<option value="">Atenção Integral a Saúde</option>
+												<option value="">Core</option>
+												<option value="">Relacionamento</option>
+												<option value="">Relatórios</option>
+												<option value="">Cobrança</option>
+												<option value="">Setup</option>
+												<option value="">Análise de Contas</option>
+												<option value="">Autorização</option>
+												<option value="">Atendimento</option>
+												<option value="">Editor de Regras</option>
+												<option value="">Faturamento</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div id="btns" class="col-xs-12">
+									<button class="btn btn-pesquisar" type="submit">Pesquisar</button>
+									<button class="btn btn-limpar" type="clear">Limpar</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</section>
+			</div>
+		</main>
+		<aside class="side-bar">
+			<div class="navbar-tabs-menu">
+			</div>
+			<div w3-include-html="mainmenu.html"></div>
+		</aside>
+		<div class="mobile-menu">
+			<input id="menu__toggle" type="checkbox">
+			<label class="menu__btn" for="menu__toggle">
+			   <span></span>
+			</label>
+			<ul class="menu__box" style="background-color: #e5e5e5e0;">
+				<li class="menu__item" style="background-color: #e5e5e5e0;">
+					<a href="funcao.html" class="menu__item  nav-link sub-btn">Função</a>
 				</li>
-				
-				<li class="li-p"> 
-					<a class="bt1 sub-btn" href="funcao">
-						<span class="icon"><i class="fa fa-sitemap"></i></span>
-						<span>Função</span>
-					</a>
+				<li class="menu__item">
+					<a href="perfilusuario.html" class="menu__item sub-btn">Perfil de Usuário</a>              
 				</li>
-				
-				<li class="li-p">
-					<a class="bt2 sub-btn" href="perfilusuario">
-						<span class="icon"><i class="fa fa-sitemap"></i></span>
-						<span>Perfil de Usuário</span>
-					</a>
+				<li class="menu__item">
+					<a href="setor.html" class="menu__item sub-btn">Setor</a>
+				</li>
+				<li class="menu__item">
+					<a href="tipousuario.html" class="menu__item sub-btn">Tipos de Usuário</a>
+				</li>
+				<li class="menu__item">
+					<a href="usuarios.html" class="menu__item sub-btn">Usuário</a>
+				</li>
+				<li class="menu__item" >
+					<a href="index.html" class="menu__item">Sair</a>
 				</li>
 			</ul>
-						
-			<div class="navbar-spacing clearfix"></div>
-			<div class="menu_sair side-bar">
-			<ul>
-				<li>
-					<a href="#">
-						<span class="icon"><i class="fa fa-arrow-circle-down"></i></span>
-						<span>Sair</span>
-					</a>
-				</li>
-			</ul>
-			</div>    
-			</aside>
-
-
-        <div class="mobile-menu">
-            <input id="menu__toggle" type="checkbox">
-            <label class="menu__btn" for="menu__toggle">
-              <span></span>
-            </label>
-            <ul class="menu__box" style="background-color: #e5e5e5e0;">
-              <li class="menu__item" style="background-color: #e5e5e5e0;">
-                  <a href="javascript://" class="menu__item  nav-link sub-btn">Função</a>
-                  <ul class="ul-permissao ul1 sub-menu" style="background-color: #e5e5e5e0; margin-left: 35px;">
-                        <li>
-                            <a href="https://luide19.github.io/funcao-template-1/funcao-1" style="color: #555555;">Função 1</a>
-                        </li>
-
-                        <li>
-                            <a href="https://luide19.github.io/funcao-2/funcao-2" style="color: #555555;">Função 2</a>
-                        </li>
-                    </ul>
-              </li>
-
-              <li class="menu__item">
-                    <a href="javascript://" class="menu__item sub-btn">Perfil de Usuário</a>
-                    <ul class="ul-historico ul2 sub-menu" style="background-color: #e5e5e5e0; margin-left: 35px;">
-                        <li>
-                            <a href="https://luide19.github.io/perfil-de-usuario-1/perfil-de-usuario" style="color: #555555;">Perfil de Usuário 1</a>
-                        </li>
-
-                        <li>
-                            <a href="https://luide19.github.io/perfil-de-usuario-1/pesquisa-de-perfil" style="color: #555555;">Perfil de Usuário 2</a>
-                        </li>
-                    </ul>                  
-              </li>
-
-              <li class="menu__item">
-                    <a href="javascript://" class="menu__item sub-btn">Setor</a>
-                    <ul class="ul-motorderegras ul3 sub-menu" style="background-color: #e5e5e5e0; margin-left: 35px;">
-                        <li>
-                            <a href="https://luide19.github.io/setor-1/setor-1" style="color: #555555;">Setor 1</a>
-                        </li>
-
-                        <li>
-                            <a href="https://luide19.github.io/setor-1/setor-2" style="color: #555555;">Setor 2</a>
-                        </li>
-                    </ul>
-              </li>
-
-              <li class="menu__item">
-                    <a href="javascript://" class="menu__item sub-btn">Tipos de Usuário</a>
-                    <ul class="ul-portal ul4 sub-menu" style="background-color: #e5e5e5e0; margin-left: 35px;">
-                        <li>
-                            <a href="https://luide19.github.io/tipos-de-usuario-1/tipos-de-usuario-1" style="color: #555555;">Tipos de Usuário 1</a>
-                        </li>
-
-                        <li>
-                            <a href="https://luide19.github.io/tipos-de-usuario-1/tipos-de-usuario-2" style="color: #555555;">Tipos de Usuário 2</a>
-                        </li>
-                    </ul>
-              </li>
-
-              <li class="menu__item">
-                <a href="javascript://" class="menu__item sub-btn">Usuário</a>
-                <ul class="ul-portal ul5 sub-menu" style="background-color: #e5e5e5e0; margin-left: 35px;">
-                    <li>
-                        <a href="https://luide19.github.io/usuarios-1/usuarios-1" style="color: #555555;">Usuário 1</a>
-                    </li>
-
-                    <li>
-                        <a href="https://luide19.github.io/usuarios-1/usuarios-2" style="color: #555555;">Usuário 2</a>
-                    </li>
-                </ul>
-          </li>
-
-              <li class="menu__item" >
-                <a href="https://luide19.github.io/abcde/" class="menu__item">Sair</a>
-              </li>
-          </ul>
-          </div>
-
-        <footer class="footer">  
-            <small style="margin-left: 10px;">Setup 4.39.4 - Desenvolvido por Qualirede - <a href="" style="color: #D0BF4A;">http://www.qualirede.com.br</a> </small>
-        </footer>
-    </div>
-		<script src="resources\js\script.js"></script>
+		</div>
+		<footer class="footer">  
+			<small style="margin-left: 10px;">Setup 4.39.4 - Desenvolvido por Qualirede - <a href="" style="color: #D0BF4A;">http://www.qualirede.com.br</a> </small>
+		</footer>
+	</div>
+	<script src="./js/script.js"></script>
+	<script>includeHTML();</script>
 </body>
 </html>

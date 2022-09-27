@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Setor</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cadastrar Tipo Usuário</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="./css/bootstrap.css">
 		<link rel="stylesheet" href="./css/estilo.css">
@@ -19,44 +19,44 @@
 				<i class="fa fa-minus-square-o" style="font-size:20px;"></i>
 			</div>
 			<div class="caixa2" style="margin-top: 10px;">
-				<span>Luide Santos de Jesus</span> 
+				<span>'Nome do usuário'</span> 
 				<i class="fa fa-minus-square-o" style="font-size:20px;"></i>
 			</div>
 		</header>
 		<main class="main-content">
 			<div class="historico" style="margin-top: -6px; margin-bottom:2px;">
 				<span class="header-story" style="margin-left: 2px;">                           
-                    <a href="index.html"> <small style="color: #C63131;">Home</small> / </a>           
-                    <a href="setor.html"> <small style="color: #C63131;">Setor</small> / </a>
-                    <a href="novosetor.html"> <small style="color: #C63131;">Novo Setor</small> / </a>
+                    <a href="index.html"> <small>Home</small> / </a>           
+                    <a href="tipousuario.html"> <small>Tipo de usuário</small> / </a>
+                    <a href="novotipodeusuario.html"> <small>Novo tipo de usuário</small> / </a>
                     <small>Edição</small>
 				</span> 
 			</div>
 			<div class="usuarios">
-				<h1>Setor</h1>
-				<small>Cadastro e edição de setor</small>
+				<h1>Tipo de usuário</h1>
+				<small>Cadastro e edição de tipo de usuário</small>
 			</div>
-            <div class="salvar-cancelar">
-                <div class="salvar">   
-                    <button id="btnSalvar">              
-                    <i class="fa fa-save"></i>
-                    <small>Salvar</small> 
-                    </button>  
-                </div>
-                <div class="cancelar">   
-                    <button id="btnCancelar">
-                    <i class="fa fa-close"></i> 
-                    <small>Cancelar</small>
-                    </button>                                               
-                </div>
-            </div>
+			<div class="salvar-cancelar">
+				<div class="salvar">   
+					<button id="btnSalvar">              
+                        <i class="fa fa-save"></i>
+                        <small>Salvar</small> 
+					</button>  
+				</div>
+				<div class="cancelar">   
+					<button id="btnCancelar">
+                        <i class="fa fa-close"></i> 
+                        <small>Cancelar</small>
+					</button>                                               
+				</div>
+			</div>
 			<div class="panel widget light-widget panel-bd-top">
 				<section class="col-md-12" id="section2" style="background-color: #FFF;">
 					<div id="informacoesGerais">
 						<h3 style="color: #C63131">Filtro</h3>
 					</div>
 					<br>
-					<form id="form-cad-setor" class="form-horizontal" method="POST" action="insert_setor.html">
+					<form id="form-cad-tipousuario" class="form-horizontal" method="POST" action="insert_tipousuario.html">
 						<div class="col-md-12">
 							<div class="col-md-6">
 								<div class="form-group row">
@@ -69,16 +69,15 @@
 								</div>
 								<div class="form-group row">
 									<div class="col-md-12">
-										<label class="col-xs-3 col-form-label control-label">Setor</label>
+										<label class="col-xs-3 col-form-label control-label">Tipo de Usuário</label>
 										<div class="controls col-xs-9">
-											<input class="form-control" for="setor" id="setor" name="setor" type="text" placeholder="Informe o setor">
+											<input class="form-control" for="tipoUsuario" id="tipoUsuario" name="tipoUsuario" type="text" placeholder="Informe o tipo de usuário">
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</form>
-					<br>
 				</section>
 			</div>
 		</main>
@@ -108,16 +107,19 @@
 				<li class="menu__item">
 					<a href="usuarios.html" class="menu__item sub-btn">Usuário</a>
 				</li>
+				<li class="menu__item">
+					<a href="log.html" class="menu__item sub-btn">Log</a>
+				</li>
 				<li class="menu__item" >
 					<a href="index.html" class="menu__item">Sair</a>
 				</li>
 			</ul>
 		</div>
 		<footer class="footer">  
-			<small style="margin-left: 10px;">Setup 4.39.4 - Desenvolvido por Qualirede - <a href="" style="color: #D0BF4A;">http://www.qualirede.com.br</a> </small>
+			<small style="margin-left: 10px;">Setup 4.39.4 - Desenvolvido por Qualirede - <a href="" style="color: #C63131;">http://www.qualirede.com.br</a> </small>
 		</footer>
 	</div>
 	<script src="./js/script.js"></script>
-	<script>includeHTML();</script>      
+	<script>includeHTML();</script>  
 </body>
 </html>
