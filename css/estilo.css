@@ -95,7 +95,8 @@ main{
 
 .salvar-cancelar{
     display:inline-flex;
-    margin: 2px 0 12px 15px;
+    margin-left: 15px;
+    margin-top: 2px;
 }
 
 .salvar-cancelar button{
@@ -103,14 +104,11 @@ main{
 }
 
 .salvar{
-    margin-right: 20px;
+    margin-right: 10px;
 	margin-left: 6px;
     
 }
 
-.salvar-cancelar i{
-font-size: 3em !important;
-}
 
 .salvar, .cancelar{
     height: 50px; 
@@ -123,7 +121,7 @@ font-size: 3em !important;
 	text-decoration: none;
 }
 
-.salvar a:hover i, .cancelar a:hover i, #btnSalvar:hover i, #btnCancelar:hover i{
+.salvar a:hover, .cancelar a:hover{
 	color:#C63131;
 }
 
@@ -173,10 +171,6 @@ form label small{
     color:#777A90;
 }
 
-.check_blok{
-    margin-top: 10px !important;
-}
-
 .control-label{
     padding-top: 10px !important;
 }
@@ -211,8 +205,8 @@ form label small{
     font-weight: 300;
 }
 
-.papeis>label>input[type="radio"], .papeis>label>input[type="checkbox"] {
-    margin: 0px 8px 0 0 !important;
+#perfil-sistema label input[type="radio"], input[type="checkbox"] {
+        margin: 0px 8px 0 0 !important;
 }
 
 .papeis{
@@ -226,7 +220,6 @@ form label small{
 
 .navbar-tabs-menu{
     height: 50px;
-    background-color:#4E4D4D;
 }
 
 .footer{
@@ -332,10 +325,10 @@ form{
     height: auto;
     display: grid;
     grid-template-areas: 
-    "header header header"
+    "header header header"                        
     "main main main"                        
     "main main main"                        
-    "main main main"
+    "main main main"                        
     "footer footer footer";
 
     grid-template-rows: 50px 1fr 1fr 1fr 50px;
